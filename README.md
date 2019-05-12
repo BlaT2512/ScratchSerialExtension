@@ -14,7 +14,6 @@ Download this repo, then go to File>>Load Project in Scratch and open the file c
 Many blocks will initially load up red and undefined, that's ok.
 
 Click "Load Experimental Extension", and paste in the following link:
-
 <a href="https://cdn.jsdelivr.net/gh/Blake-Tourneur/ScratchSerialExtension/serial_port_extension.js">
 https://cdn.jsdelivr.net/gh/Blake-Tourneur/ScratchSerialExtension/serial_port_extension.js</a>
 
