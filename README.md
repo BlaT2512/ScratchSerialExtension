@@ -37,13 +37,9 @@ Navigate to the parent directory of this repo in the terminal and run:
 to start the node server.
 
 I used <a href="https://github.com/LLK/scratchx/wiki#adding-blocks">documentation from the Lifelong Kindergarten Group</a> to set up the Scratch interface for this extension.
-I'm working on a version of this extension that uses Scratch's <a href="https://scratch.mit.edu/info/ext_download/">serial browser plugin</a>, but am still trying to get that up and running.
-The latest version of that code is in the branch "serialplugin".
 
 There is a sample Arduino sketch in this repo that listens for incoming serial messages and repeats them to test
 this Scratch extension.
-
-<br/><br/>
 
 **Attribution:**
 
