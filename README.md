@@ -1,4 +1,6 @@
 # ScratchSerialExtension
+### Info:
+This is an edited version from <a href="https://github.com/amandaghassaei/ScratchSerialExtension" target="_blank">amandaghassaei/ScratchSerialExtension</a> to work with the new versions of the required libraries (SerialPort and Socket.io). This project is being maintained.
 
 <img src="https://github.com/amandaghassaei/ScratchSerialExtension/raw/master/screenshot.png" />
 
@@ -13,8 +15,8 @@ Many blocks will initially load up red and undefined, that's ok.
 
 Click "Load Experimental Extension", and paste in the following link:
 
-<a href="http://cdn.rawgit.com/amandaghassaei/ScratchSerialExtension/281d2f3fd45102a65fc798b03bb920b07c693211/serial_port_extension.js">
-http://cdn.rawgit.com/amandaghassaei/ScratchSerialExtension/281d2f3fd45102a65fc798b03bb920b07c693211/serial_port_extension.js</a>
+<a href="https://cdn.jsdelivr.net/gh/Blake-Tourneur/ScratchSerialExtension/serial_port_extension.js">
+https://cdn.jsdelivr.net/gh/Blake-Tourneur/ScratchSerialExtension/serial_port_extension.js</a>
 
 Serial communication happens through a node.js server that must be running concurrently with scratch.
 To use the node server, first install nodejs:
@@ -35,14 +37,11 @@ Navigate to the parent directory of this repo in the terminal and run:
 
 to start the node server.
 
-If you want to know more about how node.js, socket.io, and serialport allows your browser to communicate with  serial devices, check out
-a simple demo of standalone node server with web client I wrote <a href="https://github.com/amandaghassaei/NodeSerialPortBoilerplate">here</a>.
-
 I used <a href="https://github.com/LLK/scratchx/wiki#adding-blocks">documentation from the Lifelong Kindergarten Group</a> to set up the Scratch interface for this extension.
 I'm working on a version of this extension that uses Scratch's <a href="https://scratch.mit.edu/info/ext_download/">serial browser plugin</a>, but am still trying to get that up and running.
 The latest version of that code is in the branch "serialplugin".
 
-I've included a sample Arduino sketch in this repo that listens for incoming serial messages and repeats them to test
+There is a sample Arduino sketch in this repo that listens for incoming serial messages and repeats them to test
 this Scratch extension.
 
 <br/><br/>
