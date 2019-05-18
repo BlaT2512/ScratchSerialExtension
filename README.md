@@ -21,7 +21,7 @@ The go to this link and accept the warning: http://scratchx.org/?url=https://cdn
 
 Alternatively, go to the [Scratch X editor](scratchx.org/#scratch), go to the **More Blocks** tab and click "Load Experimental Extension". Paste in the following link:
 <a href="https://cdn.jsdelivr.net/gh/Blake-Tourneur/ScratchSerialExtension/serial_port_extension.js">
-https://cdn.jsdelivr.net/gh/Blake-Tourneur/ScratchSerialExtension/serial_port_extension.js</a> Accept the warning, and you will now see all the blocks in the **More Blocks** tab.
+https://cdn.jsdelivr.net/gh/Blake-Tourneur/ScratchSerialExtension/serial_port_extension.js</a>. Accept the warning, and you will now see all the blocks in the **More Blocks** tab.
 
 I used <a href="https://github.com/LLK/scratchx/wiki#adding-blocks">documentation from the Lifelong Kindergarten Group</a> to set up the Scratch interface for this extension.
 
