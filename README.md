@@ -14,20 +14,13 @@ To run the extension, go to:
 Open the ScratchX editor, but do not do anything yet.
 
 Serial communication happens through a node.js server that must be running concurrently with scratch.
-To use the node server, first install nodejs:
-
-<a href="https://nodejs.org/en/download/">node.js</a>
-this will also install the node package manager (npm), use npm into install the following dependencies from the terminal:
-
-<a href="https://www.npmjs.com/package/serialport">serialport</a><br/>
-**npm install -g serialport**<br/>
-
-<a href="https://www.npmjs.com/package/socket.io">socket-io</a><br/>
-**npm install -g socket.io**
+To use the node server, first install <a href="https://nodejs.org/en/download/">node.js</a>. This will also install the node package manager (npm), use npm into install the following dependencies from the terminal, [serialport](https://www.npmjs.com/package/serialport) and [socket-io](https://www.npmjs.com/package/socket.io):<br>
+`npm install -g serialport`<br>
+`npm install -g socket.io`
 
 Navigate to the parent directory of this repo in the terminal and run:
 
-**node nodeServer.js**
+`node nodeServer.js`
 
 to start the node server.
 
@@ -40,7 +33,7 @@ Accept the warning, and you will now see all the blocks in the **More Blocks** t
 I used <a href="https://github.com/LLK/scratchx/wiki#adding-blocks">documentation from the Lifelong Kindergarten Group</a> to set up the Scratch interface for this extension.
 
 There is a sample Arduino sketch in this repo that listens for incoming serial messages and repeats them to test
-this Scratch extension.
+this Scratch extension. There is also a sample scratch project which can be loaded into ScratchX (File>>Load Project).
 
 ### Attribution
 Door sound effects from <a href="https://www.freesoundeffects.com/">freesoundeffects.com</a><br/>
