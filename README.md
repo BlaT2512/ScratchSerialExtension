@@ -9,6 +9,8 @@ This is a Serial Communication extension for Scratch - it allows you to pass ser
 ### Usage
 Serial communication happens through a node.js server that must be running concurrently with scratch.<br>
 
+You will need to [download this repository](https://github.com/BlaT2512/ScratchSerialExtension/releases/latest) to use the project.
+
 To run the node server, first install <a href="https://nodejs.org/en/download/">node.js</a>. This will also install the node package manager (npm), use npm to install the following dependencies from the terminal, [serialport](https://www.npmjs.com/package/serialport) and [socket-io](https://www.npmjs.com/package/socket.io):<br>
 `npm install -g serialport`<br>
 `npm install -g socket.io`
