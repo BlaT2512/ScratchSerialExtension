@@ -1,8 +1,5 @@
-/**
- * Created by aghassaei on 6/17/15.
- */
-
 var SerialPort = require('SerialPort');
+const Readline = require('@serialport/parser-readline');
 
 var app = require('http').createServer();
 var io = require('socket.io')(app);
@@ -52,7 +49,7 @@ io.on('connection', function(socket){
     });
 
     socket.on('refreshPorts', function(){
-        // console.log("refreshing ports list");
+        console.log("refreshing ports list");
         refreshAvailablePorts();
     });
 
@@ -93,10 +90,11 @@ io.on('connection', function(socket){
         console.log("initing port " + _portName + " at " + _baudRate);
         var port = new SerialPort(_portName, {
             baudRate: parseInt(_baudRate),
-            parser: SerialPort.parsers.readline("\n"),
             autoOpen: false
-        //       parser: SerialPort.parsers.raw
         });
+        var parser = new Readline();
+        port.pipe(parser);
+        
 
         port.open(function(error){
             if (error) {
@@ -105,14 +103,14 @@ io.on('connection', function(socket){
                 return;
             }
             onPortOpen(_portName, _baudRate);
-            port.on('data', onPortData);
+            parser.on('data', onPortData);
             port.on('error', onPortError);
         });
         return port;
     }
 
     function disconnectPort(callback){
-        if (currentPort && currentPort.isOpen()){
+        if (currentPort){
             var oldBaud = baudRate;
             var oldName = portName;
             console.log("disconnecting port " + oldName + " at " + oldBaud);
@@ -152,6 +150,7 @@ io.on('connection', function(socket){
     function onPortData(data){
         console.log(data);
         io.emit('dataIn', data);
+        console.log('Data sent to Scratch')
     }
 
     function onPortError(error){
@@ -160,9 +159,3 @@ io.on('connection', function(socket){
     }
 
 });
-
-
-
-
-
-
